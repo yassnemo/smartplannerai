@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 6%, 98%);
+  --foreground: hsl(240, 10%, 9%);
+  
+  --muted: hsl(240, 5%, 96%);
+  --muted-foreground: hsl(240, 4%, 46%);
+  
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(240, 10%, 9%);
+  
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(240, 10%, 9%);
+  
+  --border: hsl(240, 6%, 92%);
+  --input: hsl(240, 6%, 92%);
+  
+  --primary: hsl(231, 48%, 48%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  
+  --secondary: hsl(187, 25%, 65%);
+  --secondary-foreground: hsl(240, 10%, 9%);
+  
+  --accent: hsl(28, 85%, 65%);
+  --accent-foreground: hsl(240, 10%, 9%);
+  
+  --success: hsl(142, 71%, 45%);
+  --success-foreground: hsl(0, 0%, 98%);
+  
+  --warning: hsl(48, 96%, 53%);
+  --warning-foreground: hsl(240, 10%, 9%);
+  
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  
+  --ring: hsl(240, 10%, 9%);
+  --radius: 0.75rem;
+  
+  --chart-1: hsl(231, 48%, 48%);
+  --chart-2: hsl(187, 25%, 65%);
+  --chart-3: hsl(28, 85%, 65%);
+  --chart-4: hsl(142, 71%, 45%);
+  --chart-5: hsl(268, 83%, 58%);
+  
+  --sidebar-background: hsl(240, 6%, 98%);
+  --sidebar-foreground: hsl(240, 4%, 46%);
+  --sidebar-primary: hsl(240, 10%, 9%);
+  --sidebar-primary-foreground: hsl(0, 0%, 98%);
+  --sidebar-accent: hsl(240, 5%, 96%);
+  --sidebar-accent-foreground: hsl(240, 10%, 9%);
+  --sidebar-border: hsl(240, 6%, 92%);
+  --sidebar-ring: hsl(240, 4%, 46%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  
+  --primary: hsl(217, 89%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  
+  --success: hsl(158, 64%, 52%);
+  --success-foreground: hsl(0, 0%, 98%);
+  
+  --warning: hsl(43, 89%, 49%);
+  --warning-foreground: hsl(0, 0%, 98%);
+  
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  
+  --ring: hsl(240, 5%, 84%);
+  
+  --chart-1: hsl(220, 70%, 50%);
+  --chart-2: hsl(160, 60%, 45%);
+  --chart-3: hsl(30, 80%, 55%);
+  --chart-4: hsl(280, 65%, 60%);
+  --chart-5: hsl(340, 75%, 55%);
+  
+  --sidebar-background: hsl(240, 6%, 10%);
+  --sidebar-foreground: hsl(240, 5%, 84%);
+  --sidebar-primary: hsl(224, 71%, 4%);
+  --sidebar-primary-foreground: hsl(210, 20%, 98%);
+  --sidebar-accent: hsl(240, 4%, 16%);
+  --sidebar-accent-foreground: hsl(240, 5%, 84%);
+  --sidebar-border: hsl(240, 4%, 16%);
+  --sidebar-ring: hsl(240, 4%, 16%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary) / 0.8));
+  }
+  
+  .gradient-success {
+    background: linear-gradient(135deg, hsl(var(--success)), hsl(var(--success) / 0.8));
+  }
+  
+  .gradient-warning {
+    background: linear-gradient(135deg, hsl(var(--warning)), hsl(var(--warning) / 0.8));
+  }
+}
