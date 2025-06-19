@@ -71,7 +71,7 @@ SmartPlannerAI helps users manage their finances through intelligent analytics, 
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/yassnemo/smartplannerai
    cd SmartPlannerAI
    ```
 
